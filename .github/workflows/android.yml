@@ -27,8 +27,8 @@ jobs:
       - name: Build with Gradle
         run: |
           echo "commit=$(echo ${{ github.sha }} | cut -c-7)" >> $GITHUB_ENV
-          touch signing.properties
-          echo storeFile=../keystore.jks >> signing.properties
+          # touch signing.properties
+          # echo storeFile=../keystore.jks >> signing.properties
           # echo storePassword=${{ secrets.KEYSTORE_PASSWORD }} >> signing.properties
           # echo keyAlias=${{ secrets.KEYSTORE_ALIAS }} >> signing.properties
           # echo keyPassword=${{ secrets.KEYSTORE_ALIAS_PASSWORD }} >> signing.properties
